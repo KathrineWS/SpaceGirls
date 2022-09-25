@@ -5,56 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex,nofollow" />
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="stylesheet/style.css" />
     <title>Document</title>
   </head>
   <body>
     <header></header>
     <main>
-      <div class="pcontainer">
-        <div class="pimg">
-          <img
-            src="https://stardustlab-023b.restdb.io/rest/stardustlab"
-            alt=""
-          />
-        </div>
-        <div class="psectioninfo">
-          <section class="sectioninfotop">
-            <h3>Ursula</h3>
-            <p>DKK 1600</p>
-          </section>
-          <section class="sectioninfo">
-            <form action="cupsize">
-              <label for="size">C</label>
-              <input type="radio" id="C" name="size_chart" value="C" />
-              <!-- <label for="size">D</label>
-              <input type="radio" id="D" name="size_chart" value="D" /> -->
-            </form>
-            <form action="bottomsize">
-              <label for="size">S</label>
-              <input type="radio" id="S" name="size_chart" value="S" />
-              <!-- <label for="size">M</label>
-              <input type="radio" id="M" name="size_chart" value="M" /> -->
-            </form>
-            <form action="shoesize">
-              <label for="size">35</label>
-              <input type="radio" id="35" name="size_chart" value="35" />
-              <!-- <label for="size">M</label>
-              <input type="radio" id="M" name="size_chart" value="M" /> -->
-            </form>
+      <template id="producttemp">
+        <div class="pcontainer">
+          <img class="productimg" src="" alt="" />
 
-            <button class="addbutton">Add to basket</button>
-            <div class="smallinfo">
-              <p>Description -</p>
-              <p>Delivery&Payment -</p>
-              <p>Details</p>
-            </div>
-            <div class="textsection">
-              <p class="color">color</p>
-            </div>
-          </section>
+          <div class="psectioninfo">
+            <section class="sectioninfotop">
+              <h3>Ursula</h3>
+              <p class="price">DKK 1600</p>
+            </section>
+            <section class="sectioninfo">
+              <form action="cupsize">
+                <label for="size">C</label>
+                <input type="radio" id="C" name="size_chart" value="C" />
+                <!-- <label for="size">D</label>
+              <input type="radio" id="D" name="size_chart" value="D" /> -->
+              </form>
+              <form action="bottomsize">
+                <label for="size">S</label>
+                <input type="radio" id="S" name="size_chart" value="S" />
+                <!-- <label for="size">M</label>
+              <input type="radio" id="M" name="size_chart" value="M" /> -->
+              </form>
+              <form action="shoesize">
+                <label for="size">35</label>
+                <input type="radio" id="35" name="size_chart" value="35" />
+                <!-- <label for="size">M</label>
+              <input type="radio" id="M" name="size_chart" value="M" /> -->
+              </form>
+
+              <button class="addbutton">Add to basket</button>
+              <div class="smallinfo">
+                <p>Description -</p>
+                <p>Delivery&Payment -</p>
+                <p>Details</p>
+              </div>
+              <div class="textsection">
+                <p class="color">color</p>
+              </div>
+            </section>
+          </div>
         </div>
-      </div>
+      </template>
     </main>
     <footer></footer>
   </body>
