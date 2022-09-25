@@ -13,7 +13,10 @@
     <main>
       <div class="pcontainer">
         <div class="pimg">
-          <img src="" alt="" />
+          <img
+            src="https://stardustlab-023b.restdb.io/rest/stardustlab"
+            alt=""
+          />
         </div>
         <div class="psectioninfo">
           <section class="sectioninfotop">
@@ -21,12 +24,25 @@
             <p>DKK 1600</p>
           </section>
           <section class="sectioninfo">
-            <form action="sizechart">
+            <form action="cupsize">
+              <label for="size">C</label>
+              <input type="radio" id="C" name="size_chart" value="C" />
+              <!-- <label for="size">D</label>
+              <input type="radio" id="D" name="size_chart" value="D" /> -->
+            </form>
+            <form action="bottomsize">
               <label for="size">S</label>
               <input type="radio" id="S" name="size_chart" value="S" />
-              <label for="size">M</label>
-              <input type="radio" id="M" name="size_chart" value="M" />
+              <!-- <label for="size">M</label>
+              <input type="radio" id="M" name="size_chart" value="M" /> -->
             </form>
+            <form action="shoesize">
+              <label for="size">35</label>
+              <input type="radio" id="35" name="size_chart" value="35" />
+              <!-- <label for="size">M</label>
+              <input type="radio" id="M" name="size_chart" value="M" /> -->
+            </form>
+
             <button class="addbutton">Add to basket</button>
             <div class="smallinfo">
               <p>Description -</p>
