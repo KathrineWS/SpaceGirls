@@ -15,6 +15,7 @@ fetch(url, options)
   })
   .then((data) => {
     console.log(data);
+    handleData(data);
   })
   .catch((e) => {
     console.error("an error occured:", e.message);
@@ -33,6 +34,10 @@ function handleData(stardustlab) {
     clone.querySelector(
       ".item"
     ).textContent = `${product.articletype} | ${product.productdisplayname}`;
+    clone.querySelector(".priceItem").textContent = product.price;
+
+    const aEl = clone.querySelector("a");
+    aEl.href += product._id;
 
     const parent = document.querySelector("main");
     parent.appendChild(clone);
