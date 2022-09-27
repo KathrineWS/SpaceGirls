@@ -1,0 +1,30 @@
+/*PRODUCT LIST CSS*/
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    gap: 5rem;
+}
+
+article {
+    display: flex;
+
+    flex-direction: column;
+}
+
+article h2 {
+    font-size: 2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*PRODUCT PAGE CSS*/
+
+#productpage {}
