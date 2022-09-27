@@ -1,3 +1,77 @@
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.grid-header {
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    grid-template-rows: none;
+}
+
+.logo-header {
+    display: flex;
+}
+
+.logo-grid {
+    padding-left: 5px;
+    width: 55px;
+    height: auto;
+}
+
+.navigation-grid {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding-top: 15px;
+}
+
+/* container for the dropdown button and dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown,
+.nav-item {
+    width: 120px;
+    padding-right: 5px;
+}
+
+.navigation-grid a {
+    padding: 5% 10% 5% 10%;
+    text-decoration: none;
+    color: #262473;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.navigation-grid a:hover {
+    background-color: #fff;
+    color: #B378ED;
+    transition: color .15s ease-in-out;
+}
+
+/* Dropdown Content  */
+.dropdown-content {
+    top: 30px;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 /*PRODUCT LIST CSS*/
 #productlistcontainer {
     position: relative;
