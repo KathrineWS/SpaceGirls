@@ -1,13 +1,36 @@
 /*PRODUCT LIST CSS*/
+#productlistcontainer {
+    position: relative;
+    min-height: 100vh;
+}
 
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+#productlistheader {
+    background-image: url(../img/background.png);
+    background-repeat: space;
+    max-width: 100%;
+    height: auto;
 
 
+}
+
+h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    gap: 5rem;
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 2em;
+}
+
+#productlistpage {
+    position: absolute;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 70%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    gap: 3rem;
 }
 
 article {
@@ -20,11 +43,15 @@ article h2 {
     font-size: 2rem;
 }
 
-img {
+.priceItem {
+    font-size: 1rem;
+}
+
+.productlistimg {
     max-width: 100%;
     height: auto;
 }
 
-/*PRODUCT PAGE CSS*/
 
-#productpage {}
+
+/*PRODUCT PAGE CSS*/
