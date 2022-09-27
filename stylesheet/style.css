@@ -1,0 +1,54 @@
+.grid-header {
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    grid-template-rows: none;
+}
+
+.logo-header {
+    display: flex;
+}
+
+.logo-grid {
+    padding-left: 5px;
+    width: 55px;
+    height: auto;
+}
+
+.navigation-grid {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding-top: 15px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown,
+.nav-item {
+    width: 120px;
+    padding-right: 5px;
+}
+
+.navigation-grid a {
+    padding: 5% 10% 5% 10%;
+    text-decoration: none;
+    color: #7A6563;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    top: 30px;
+    display: none;
+    position: absolute;
+    background-color: #fcd3dec4;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+}
