@@ -1,3 +1,8 @@
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
 .grid-header {
     display: grid;
     grid-template-columns: 65px 1fr;
@@ -21,6 +26,7 @@
     padding-top: 15px;
 }
 
+/* container for the dropdown button and dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -35,20 +41,33 @@
 .navigation-grid a {
     padding: 5% 10% 5% 10%;
     text-decoration: none;
-    color: #7A6563;
+    color: #262473;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
+.navigation-grid a:hover {
+    background-color:  #fff;
+    color: #B378ED;
+    transition: color .15s ease-in-out;
+}
+
+/* Dropdown Content  */
 .dropdown-content {
     top: 30px;
     display: none;
     position: absolute;
-    background-color: #fcd3dec4;
+    background-color: #fff;
     min-width: 200px;
     z-index: 1;
 }
 
+/* Links inside the dropdown */
 .dropdown-content a {
+    display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
     display: block;
 }
