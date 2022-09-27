@@ -1,5 +1,13 @@
-const url = "https://stardustlab-023b.restdb.io/rest/stardustlab?max=22";
+const urlParams = new URLSearchParams(window.location.search);
+const cat = urlParams.get("category");
+const sub = urlParams.get("subcategory");
 
+let url = "https://stardustlab-023b.restdb.io/rest/stardustlab?max=22";
+
+if (cat) {
+  url += `&q={"category": "${cat}", "subcategory": "${sub}"}`;
+}
+console.log(url);
 const options = {
   headers: {
     "x-apikey": "632c555dbf647d0a5c19864e",
