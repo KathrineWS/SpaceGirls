@@ -1,7 +1,7 @@
 /*PRODUCT LIST CSS*/
 #productlistcontainer {
     position: relative;
-    min-height: 100vh;
+
 }
 
 #productlistheader {
@@ -39,18 +39,27 @@ article {
     flex-direction: column;
 }
 
-article h2 {
-    font-size: 2rem;
+
+
+.sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
 }
 
-.priceItem {
-    font-size: 1rem;
+.color {
+    margin: 0;
+    padding: 0;
 }
 
 .productlistimg {
     max-width: 100%;
     height: auto;
 }
+
 
 
 

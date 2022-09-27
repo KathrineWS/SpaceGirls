@@ -37,7 +37,7 @@ function handleData(stardustlab) {
     clone.querySelector(
       ".priceItem"
     ).textContent = `${product.price} ${product.valuta}`;
-    //clone.querySelector(".priceItem").textContent = product.price;
+    clone.querySelector(".color").textContent = product.basecolor;
 
     clone.querySelector(".productlistimg").src += product.imglink;
 
