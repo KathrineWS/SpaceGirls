@@ -5,19 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex,nofollow" />
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="stylesheet/style.css" />
     <title>Product list</title>
   </head>
   <body>
-    <header></header>
-    <main>
-      <article>
-        <img src="img/yvonne-front.jpg" alt="bikini style Yvonne" />
-        <h2 class="item">Russian bikini | Yvonne</h2>
-        <p class="priceItem">DKK 1600</p>
-        <a class="linkhtml" href="product.html">Read more</a>
-      </article>
-    </main>
+    <div id="productlistcontainer">
+      <header id="productlistheader">
+        <h1>SUBCATEGORY</h1>
+      </header>
+      <main id="productlistpage">
+        <template>
+          <article>
+            <a class="linkhtml" href="product.html?id="
+              ><img
+                src="https://helpful-macaron-ef7cdd.netlify.app/"
+                alt="bikini style Yvonne"
+                class="productlistimg"
+            /></a>
+
+            <div class="sec">
+              <h3 class="item">Russian bikini | Yvonne</h3>
+              <p class="priceItem">1600 DKK</p>
+            </div>
+            <p class="color">color</p>
+          </article>
+        </template>
+      </main>
+    </div>
     <footer></footer>
   </body>
+  <script src="js/productlist.js"></script>
 </html>
