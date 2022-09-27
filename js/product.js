@@ -1,5 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
+
 console.log(id);
 
 //const url = "https://stardustlab-023b.restdb.io/rest/stardustlab?max=22";
