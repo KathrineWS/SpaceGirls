@@ -35,6 +35,7 @@ function handleData(stardustlab) {
       ".item"
     ).textContent = `${product.articletype} | ${product.productdisplayname}`;
     clone.querySelector(".priceItem").textContent = product.price;
+    clone.querySelector(".productlistimg").src += product.imglink;
 
     const aEl = clone.querySelector("a");
     aEl.href += product._id;

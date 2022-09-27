@@ -96,6 +96,8 @@ function handleData(stardustlab) {
       document.querySelector(".shoesize").appendChild(copy);
     });
     // alert("hej");
+    document.querySelector(".cupsize").remove();
+    document.querySelector(".bottomsize").remove();
   } else {
     document.querySelector(".shoesize").remove();
     //alert("vises ikke");
@@ -106,4 +108,5 @@ function handleData(stardustlab) {
   document.querySelector("h3").textContent = stardustlab.productdisplayname;
   document.querySelector(".price").textContent = stardustlab.price;
   document.querySelector(".color").textContent = stardustlab.basecolor;
+  document.querySelector(".productimg").src += stardustlab.imglink;
 }
