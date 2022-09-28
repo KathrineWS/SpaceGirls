@@ -110,7 +110,10 @@ function handleData(stardustlab) {
   //textContents
 
   document.querySelector("h3").textContent = stardustlab.productdisplayname;
-  document.querySelector(".price").textContent = stardustlab.price;
+  // document.querySelector(".price").textContent = stardustlab.price;
+  document.querySelector(
+    ".price"
+  ).textContent = `${stardustlab.price} ${stardustlab.valuta}`;
   document.querySelector(".color").textContent = stardustlab.basecolor;
   document.querySelector(".productimg").src += stardustlab.imglink;
 }
