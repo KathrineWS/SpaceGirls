@@ -155,8 +155,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 25vh;
+  height: 20vh;
   display: block;
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -164,7 +166,6 @@ body {
   color: white;
   font-size: 4rem;
 
-  padding: 0;
 }
 
 
@@ -336,13 +337,14 @@ h2 {
 
 
 @media only screen and (max-width: 800px) {
-  .dropdown, .nav-item {
+
+  .dropdown,
+  .nav-item {
     min-width: 10px
-    
   }
 
   .navigation-grid {
-    gap:1rem;
+    gap: 1rem;
   }
 
   .chart-button {
