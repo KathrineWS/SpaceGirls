@@ -1,7 +1,9 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
+const advanced = urlParams.get("articletype");
 
 console.log(id);
+console.log(advanced);
 
 //const url = "https://stardustlab-023b.restdb.io/rest/stardustlab?max=22";
 const url = `https://stardustlab-023b.restdb.io/rest/stardustlab/${id}`;
@@ -36,6 +38,7 @@ fetch(url, options)
   .then((data) => showProduct(data));
 
 function handleData(stardustlab) {
+  document.querySelector(".sub-art").textContent = advanced.toUpperCase();
   console.log(stardustlab.cupsize.length);
   const template = document.querySelector("template").content;
 

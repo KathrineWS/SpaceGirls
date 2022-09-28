@@ -9,7 +9,67 @@
     <title>Document</title>
   </head>
   <body>
-    <header></header>
+    <header class="grid-header">
+      <a href="index.html" class="logo-header">
+        <img
+          class="logo-grid"
+          src="img/logowotext.svg"
+          onmouseover="this.src = '/img/logopurple.svg'"
+          onmouseout="this.src = '/img/logowotext.svg'"
+          alt="logo without text"
+      /></a>
+
+      <nav class="navigation-grid">
+        <div class="dropdown">
+          <a class="dropbtn">Women</a>
+          <div class="dropdown-content dd-women">
+            <a href="productlist.html?category=Woman&subcategory=Ready to ship"
+              >Ready to ship</a
+            >
+            <a href="">Custom made</a>
+            <a href="productlist.html?category=Woman&subcategory=Rental"
+              >Rental</a
+            >
+            <a
+              href="productlist.html?category=Woman&subcategory=Practice bikini"
+              >Practice sikini</a
+            >
+            <a href="">Accessment</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a class="dropbtn">Men</a>
+          <div class="dropdown-content dd-men">
+            <a href="">Ready to ship</a>
+            <a href="">Custom made</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a class="dropbtn">Accessories</a>
+          <div class="dropdown-content dd-accessories">
+            <a href="productlist.html?category=Accessories&subcategory=Shoes"
+              >Shoes</a
+            >
+            <a
+              href="productlist.html?category=Accessories&subcategory=Jewellery"
+              >Jewellery</a
+            >
+            <a
+              href="productlist.html?category=Accessories&subcategory=Skinproduct"
+              >Skin products</a
+            >
+            <a href="">Custom kimono</a>
+            <a href="">Accessment</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="">About</a>
+        </div>
+      </nav>
+      <div class="header-img">
+        <h1 class="sub-art">ARTICLETYPE</h1>
+      </div>
+    </header>
     <main id="productpage">
       <img
         class="productimg"
@@ -59,7 +119,80 @@
         </section>
       </div>
     </main>
-    <footer></footer>
+    <footer class="footer-grid">
+      <img
+        class="footer-img"
+        src="img/logopurple.svg"
+        alt="blue logo"
+        width="200"
+        height="200"
+      />
+      <div class="footer-text">
+        <div class="woman-footer">
+          <p>WOMEN</p>
+          <ul>
+            <li>Ready to ship</li>
+            <li>Custom made</li>
+            <li>Rental</li>
+            <li>Practice bikini</li>
+            <li>Private assesments</li>
+          </ul>
+        </div>
+        <div class="men-footer">
+          <p>MEN</p>
+          <ul>
+            <li>Ready to ship</li>
+            <li>Custom made</li>
+          </ul>
+        </div>
+        <div class="acc-footer">
+          <p>ACCESSORIES</p>
+          <ul>
+            <li>Shoes</li>
+            <li>Jewellery</li>
+            <li>Skin products</li>
+            <li>Practice bikini</li>
+            <li>Costume kimono</li>
+          </ul>
+        </div>
+        <div class="contact-footer">
+          <p>COSTUMER SERVICE</p>
+
+          <ul>
+            <li>About</li>
+            <li>Contact</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+      </div>
+      <div class="icon-footer">
+        <a href="https://www.instagram.com/stardust_lab/"
+          ><img
+            src="img/igbtn.svg"
+            alt="ig button"
+            srcset=""
+            height="50"
+            width="50"
+        /></a>
+        <a href="https://www.facebook.com/Stardust.Lab.Dk/"
+          ><img
+            src="img/fbbtn.svg"
+            alt="fb button"
+            srcset=""
+            height="50"
+            width="50"
+        /></a>
+        <a href="mailto:normavallsc@gmail.com"
+          ><img
+            src="img/mailbtn.svg"
+            alt="mail button"
+            srcset=""
+            height="50"
+            width="50"
+        /></a>
+      </div>
+      <p class="copyright">© 2020 for Stardust Lab</p>
+    </footer>
   </body>
   <script src="js/product.js"></script>
 </html>

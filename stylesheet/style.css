@@ -149,10 +149,26 @@ body {
 
 
 /*PRODUCT LIST CSS*/
-#productlistcontainer {
-  position: relative;
+.header-img {
+
+  background-image: url(../img/backgr.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 25vh;
+  display: block;
 
 }
+
+.header-img h1 {
+  color: white;
+  font-size: 4rem;
+
+  padding: 0;
+}
+
+
+
 
 #productlistheader {
   background-image: url(../img/background.png);
@@ -161,29 +177,27 @@ body {
   height: auto;
 
 
+
 }
 
-h1 {
-  font-size: 6rem;
-  display: flex;
-  justify-content: center;
-  color: white;
-  padding: 2em;
-}
+
 
 #productlistpage {
-  position: absolute;
+
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   max-width: 70%;
   gap: 3rem;
+  margin: auto;
+  padding-top: 5em;
 }
 
 article {
   display: flex;
-
+  justify-content: flex-end;
+  justify-self: flex-end;
   flex-direction: column;
 }
 
