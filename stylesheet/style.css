@@ -197,7 +197,7 @@ body {
 
 article {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   justify-self: flex-end;
   flex-direction: column;
 }
@@ -222,20 +222,24 @@ article {
 /*Landing page*/
 
 .best-selling-container {
-  margin-top: 10em;
+  margin-top: 2em;
 }
 
 h2 {
   display: flex;
   justify-content: center;
   margin-bottom: 3em;
+  color: #262473;
+  font-weight: 900;
+  font-size: 2rem;
 }
 
 .best-selling {
   display: grid;
-  max-width: 100%;
+  max-width: 900px;
   min-height: auto;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
 }
 
 .best-selling article {
@@ -293,7 +297,8 @@ h2 {
 .spacer {
   width: 100%;
   display: block;
-  height: 7rem;
+  /* height: 7rem; */
+  border-bottom: solid #7E49F2 0.1em ;
 }
 
 
@@ -308,7 +313,7 @@ h2 {
   align-items: center;
   margin: 0;
   padding: 0;
-  border-top: solid #7E49F2 0.1em;
+  /* border-top: solid #7E49F2 0.1em; */
 }
 
 .footer-img {
@@ -320,6 +325,20 @@ h2 {
 .footer-text {
   display: flex;
   grid-column: 2/6;
+  gap: 2rem;
+}
+
+.footer-text p {
+  font-weight: 800;
+  color: #262473;
+}
+footer  ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+  color: #262473;
 }
 
 .icon-footer {
@@ -333,6 +352,7 @@ h2 {
 
 .copyright {
   grid-column: 1/6;
+  color: #262473;
 }
 
 
