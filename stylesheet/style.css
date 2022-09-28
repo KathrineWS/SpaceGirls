@@ -1,152 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
-* {
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-}
-
-/* MAIN */
-
-main {
-  font-family: "Crimson Text", serif;
-  color: #262473;
-  text-align: center;
-  font-size: 5rem;
-}
-
-.bestsellerswrap {
-  margin: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.bestsellerswrap img {
-  border-radius: 15%;
-}
-
-.bikini1 {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: auto;
-  align-self: center;
-  order: 0;
-  margin-right: 15vh;
-}
-
-.bikini2 {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: center;
-  order: 0;
-  margin-right: 15vh;
-}
-
-.bikini3 {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: center;
-  order: 0;
-}
-
-.costumerwrap {
-  padding-top: 10vh;
-  height: 170vh;
-  background-image: url(../img/background11.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.costumer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.costumer img {
-  border-radius: 15%;
-}
-
-.model1 {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: auto;
-  align-self: center;
-  order: 0;
-}
-
-.model2 {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: center;
-  order: 0;
-}
-/* FOOTER CSS */
-
-footer {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3em;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-
-footer p {
-  font-weight: bold;
-}
-
-footer ul {
+html {
   padding: 0;
   margin: 0;
-}
-footer li {
-  list-style-type: none;
-  margin: 0 0 8px 0;
-}
-
-.iconsfooter {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-.flexboxicons {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: center;
-  order: 0;
-}
-
-.iconsfooter p {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 #page-container {
-  position: relative;
+  /* position: relative; */
   min-height: 100vh;
+  padding: 0;
+  margin: 0;
 }
+
+body {
+  font-family: 'Crimson Text', serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
 
 .grid-header {
   display: grid;
@@ -179,30 +49,29 @@ footer li {
 
 .dropdown,
 .nav-item {
-  width: 120px;
-  padding-right: 5px;
+  width: 140px;
+  padding-right: 1px;
 }
 
 .navigation-grid a {
   padding: 5% 10% 5% 10%;
   text-decoration: none;
   color: #262473;
-  font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 
 .navigation-grid a:hover {
   background-color: #fff;
-  color: #b378ed;
-  transition: color 0.15s ease-in-out;
+  color: #B378ED;
+  transition: color .15s ease-in-out;
 }
 
 /* Dropdown Content  */
 .dropdown-content {
-  top: 30px;
+  top: 20px;
   display: none;
   position: absolute;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   min-width: 200px;
   z-index: 1;
 }
@@ -217,9 +86,19 @@ footer li {
   display: block;
 }
 
+#img-container {
+  background-image: url(../img/header.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
 /*PRODUCT LIST CSS*/
 #productlistcontainer {
   position: relative;
+
 }
 
 #productlistheader {
@@ -227,10 +106,11 @@ footer li {
   background-repeat: space;
   max-width: 100%;
   height: auto;
+
+
 }
 
 h1 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 6rem;
   display: flex;
   justify-content: center;
@@ -245,7 +125,6 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   max-width: 70%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   gap: 3rem;
 }
 
@@ -271,5 +150,134 @@ article {
   max-width: 100%;
   height: auto;
 }
+
+/*Landing page*/
+
+.best-selling-container {
+  margin-top: 10em;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+
+.best-selling {
+  display: grid;
+  max-width: 100%;
+  min-height: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.best-selling article {
+  margin: 2em;
+  max-width: 100%;
+}
+
+.best-selling article img {
+  max-width: 100%;
+  border-radius: 8%;
+}
+
+.best-selling article h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container-whole {
+  background-image: url(../img/backgr.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* min-height: auto; */
+  max-width: 100%;
+  height: 170vh;
+  margin: auto;
+}
+
+.grid-container-whole h2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
+}
+
+.cust-rev {
+  display: flex;
+}
+
+.flex-container {
+  max-width: 100%;
+  display: flex;
+  /* align-content: space-between; */
+  margin: auto;
+}
+
+.flex-container img {
+  max-width: 40%;
+  padding: 2em;
+}
+
+/* .flex-item {
+  display: flex;
+  justify-content: space-between;
+} */
+
+
+
+/*footer style*/
+
+.footer-grid {
+  max-width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border-top: solid #B378ED 0.4em;
+}
+
+.footer-img {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-text {
+  display: flex;
+  grid-column: 2/6;
+}
+
+.icon-footer {
+  display: flex;
+  max-width: 50%;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  grid-column: 1/6;
+}
+
+.copyright {
+  grid-column: 1/6;
+}
+
+
+
+/* .category-footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  min-height: auto;
+} */
+
+/* footer ul {
+  padding: 0;
+  margin: 0;
+}
+footer li {
+  list-style-type: none;
+  margin: 0 0 8px 0;
+} */
 
 /*PRODUCT PAGE CSS*/
