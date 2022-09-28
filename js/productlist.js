@@ -33,6 +33,7 @@ fetch(url, options)
 //   .then((data) => handleData(data));
 
 function handleData(stardustlab) {
+  document.querySelector(".sub-cat").textContent = sub.toUpperCase();
   stardustlab.forEach((product) => {
     //console.log(product);
 
@@ -50,7 +51,7 @@ function handleData(stardustlab) {
     clone.querySelector(".productlistimg").src += product.imglink;
 
     const aEl = clone.querySelector("a");
-    aEl.href += product._id;
+    aEl.href += product._id + "&articletype=" + sub;
 
     const parent = document.querySelector("#productlistpage");
     parent.appendChild(clone);
