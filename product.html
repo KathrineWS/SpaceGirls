@@ -81,52 +81,57 @@
       <div class="header-img">
         <h1 class="sub-art">ARTICLETYPE</h1>
       </div>
-      <img
-        class="productimg"
-        src="https://helpful-macaron-ef7cdd.netlify.app/"
-        alt="product name"
-        width="545"
-        height="818"
-      />
+      <h4 class="breadcrumbs">HOME/CATEGORY/SUBCATEGORY/PRODUCT</h4>
+      <div class="product-container">
+        <img
+          class="productimg"
+          src="https://helpful-macaron-ef7cdd.netlify.app/"
+          alt="product name"
+          width="600"
+          height="600"
+        />
 
-      <div class="psectioninfo">
-        <section class="sectioninfotop">
-          <h3>Ursula</h3>
-          <p class="price">DKK 1600</p>
-        </section>
-        <section class="sectioninfo">
-          <form action="sizechart">
-            <div class="cupsize">
-              <template>
-                <label for="size-">C</label>
-                <input type="radio" id="size-" name="size_chart" value="C" />
-              </template>
-            </div>
+        <div class="psectioninfo">
+          <section class="sectioninfotop">
+            <h3>Ursula</h3>
+            <p class="price">DKK 1600</p>
+          </section>
+          <section class="sectioninfo">
+            <form action="sizechart">
+              <div class="cupsize">
+                <p>Choose cupsize:</p>
+                <template>
+                  <label for="size-">C</label>
+                  <input type="radio" id="size-" name="size_chart" value="C" />
+                </template>
+              </div>
 
-            <div class="bottomsize">
-              <template>
-                <label for="size_">S</label>
-                <input type="radio" id="size_" name="size_chart" value="S" />
-              </template>
-            </div>
-            <div class="shoesize">
-              <template>
-                <label for="size-_">35</label>
-                <input type="radio" id="35" name="size-_" value="35" />
-              </template>
-            </div>
-          </form>
+              <div class="bottomsize">
+                <p>Choose size:</p>
+                <template>
+                  <label for="size_">S</label>
+                  <input type="radio" id="size_" name="size_chart" value="S" />
+                </template>
+              </div>
+              <div class="shoesize">
+                <template>
+                  <label for="size-_">35</label>
+                  <input type="radio" id="35" name="size-_" value="35" />
+                </template>
+              </div>
+            </form>
 
-          <button class="addbutton">Add to basket</button>
-          <div class="smallinfo">
-            <p>Description -</p>
-            <p>Delivery&Payment -</p>
-            <p>Details</p>
-          </div>
-          <div class="textsection">
-            <p class="color">color</p>
-          </div>
-        </section>
+            <button class="addbutton">Add to chart</button>
+            <div class="smallinfo">
+              <p class="first">Description -</p>
+              <p>Delivery&Payment -</p>
+              <p>Details</p>
+            </div>
+            <div class="textsection">
+              <p class="color">color</p>
+            </div>
+          </section>
+        </div>
       </div>
     </main>
     <footer class="footer-grid">
