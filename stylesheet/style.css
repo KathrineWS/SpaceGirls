@@ -19,9 +19,13 @@ body {
 /* Header */
 
 .grid-header {
-  display: grid;
-  grid-template-columns: 65px 1fr;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* grid-template-columns: 65px 1fr; */
   grid-template-rows: none;
+  padding: 0.4rem;
+  /* margin-top: 0.4em; */
 }
 
 .logo-header {
@@ -29,7 +33,7 @@ body {
 }
 
 .logo-grid {
-  padding-left: 5px;
+  /* padding-left: 5px; */
   width: 55px;
   height: auto;
 }
@@ -38,7 +42,7 @@ body {
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
-  padding-top: 15px;
+  /* padding-top: 15px; */
 }
 
 /* container for the dropdown button and dropdown content */
@@ -49,12 +53,15 @@ body {
 
 .dropdown,
 .nav-item {
-  width: 140px;
+  min-width: 140px;
   padding-right: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start
 }
 
 .navigation-grid a {
-  padding: 5% 10% 5% 10%;
+  /* padding: 5% 10% 5% 10%; */
   text-decoration: none;
   color: #262473;
   font-weight: bold;
@@ -62,17 +69,17 @@ body {
 
 .navigation-grid a:hover {
   background-color: #fff;
-  color: #B378ED;
+  color: #7E49F2;
   transition: color .15s ease-in-out;
 }
 
 /* Dropdown Content  */
 .dropdown-content {
-  top: 20px;
+  top: 35px;
   display: none;
   position: absolute;
   background-color: rgb(255, 255, 255);
-  min-width: 200px;
+  min-width: 100%;
   z-index: 1;
 }
 
@@ -83,17 +90,63 @@ body {
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0.4rem;
+
+}
+
+.chart-button {
+  width: 35px;
+  height: auto;
+  padding-right: 1em;
+}
+
+.subscribe-button {
+  z-index: 10;
+  display: flex;
+  height: auto;
+  /* padding-right: 15px; */
+}
+
+.subscribe-button a {
+  border: solid 2px #fff;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  margin: auto;
+  padding: 5px;
+  background: #7E49F2;
 }
 
 #img-container {
   background-image: url(../img/header.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
+  width: 100%;
+  grid-column: span 2;
   height: 100vh;
   display: block;
+  /* margin-top: 1em; */
 }
+
+#img-container P {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-headerimg {
+  display: flex;
+  margin: auto;
+}
+
+
 
 /*PRODUCT LIST CSS*/
 #productlistcontainer {
@@ -222,6 +275,11 @@ h2 {
   justify-content: space-between;
 } */
 
+.spacer {
+  width: 100%;
+  display: block;
+  height: 7rem;
+}
 
 
 /*footer style*/
@@ -235,7 +293,7 @@ h2 {
   align-items: center;
   margin: 0;
   padding: 0;
-  border-top: solid #B378ED 0.4em;
+  border-top: solid #7E49F2 0.1em;
 }
 
 .footer-img {
@@ -263,21 +321,19 @@ h2 {
 }
 
 
+@media only screen and (max-width: 800px) {
+  .dropdown, .nav-item {
+    min-width: 10px
+    
+  }
 
-/* .category-footer {
-  display: flex;
-  flex-direction: column;
-  max-width: 30%;
-  min-height: auto;
-} */
+  .navigation-grid {
+    gap:1rem;
+  }
 
-/* footer ul {
-  padding: 0;
-  margin: 0;
+  .chart-button {
+    padding-right: 0.1em;
+  }
 }
-footer li {
-  list-style-type: none;
-  margin: 0 0 8px 0;
-} */
 
 /*PRODUCT PAGE CSS*/
